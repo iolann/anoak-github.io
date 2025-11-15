@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANOAK - Chroniques d'un Univers Oublié</title>
+    <link rel="stylesheet" href="style.cssanoak.css">
+    <script src="gata.js"></script>
+</head>
+<body>
+    <div class="grid-lines"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="logo">ANOAK</h1>
+            <p class="tagline">Chroniques d'un Univers Oublié</p>
+            <p class="subtitle">
+                Des milliards d'années après la fin d'une guerre interdimensionnelle, 
+                découvrez l'histoire de trois âmes qui ont sauvé l'existence elle-même.
+            </p>
+            <button class="cta-button" onclick="document.querySelector('.story').scrollIntoView({behavior: 'smooth'})">
+                Découvrir l'histoire
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2 class="section-title">L'Univers Visuel</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <!-- REMPLACEZ par votre URL Imgur/PostImages -->
+                <img src="https://imgur.com/FcVzaxR" alt="Poster ANOAK">
+                <div class="gallery-overlay">
+                    <p class="overlay-text">Première de couverture</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imgur.com/1Xk9ap4" alt="B-021">
+                <div class="gallery-overlay">
+                    <p class="overlay-text">Planète B-021</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imgur.com/u539KHK" alt="Dimension supérieure">
+                <div class="gallery-overlay">
+                    <p class="overlay-text">Le Champ de Conscience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters">
+        <h2 class="section-title">Les Gardiens</h2>
+        <div class="characters-grid">
+            <div class="character-card">
+                <img src="https://imgur.com/cTZprYG" alt="Aaron">
+                <h3 class="character-name">Aaron El'kaen</h3>
+                <p class="character-role">La Conscience Éveillée</p>
+                <p class="character-desc">
+                    Un jeune introverti de 17 ans qui découvre qu'il est destiné à devenir 
+                    le gardien du tissu universel. La perception pure incarnée.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <img src="https://imgur.com/KLx9KgH" alt="Iris">
+                <h3 class="character-name">Iris</h3>
+                <p class="character-role">L'Émotion et la Vie</p>
+                <p class="character-desc">
+                    Brillante et passionnée, elle représente l'amour et la compassion. 
+                    Sans elle, l'univers serait froid et vide.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <img src="https://imgur.com/06dsnHB" alt="Mercure">
+                <h3 class="character-name">Vénus</h3>
+                <p class="character-role">La Logique et l'Ordre</p>
+                <p class="character-desc">
+                    Méthodique et logique, il incarne la structure et la raison. 
+                    Le gardien des lois qui maintiennent l'existence.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <img src="https://imgur.com/kpjMnTA" alt="Anoak">
+                <h3 class="character-name">Anoak</h3>
+                <p class="character-role">Le Gardien des Sphères</p>
+                <p class="character-desc">
+                    Être immortel vivant dans les dimensions supérieures, mentor et guide 
+                    plein de sagesse qui teste Aaron pour savoir s'il est l'élu.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+        <h2 class="section-title">L'Histoire</h2>
+        <div class="story-content">
+            <p class="story-text">
+                Sur <span class="story-highlight">B-021</span>, une planète ultra-technologique où la conscience 
+                s'est endormie, Aaron découvre qu'il existe bien plus que la réalité visible. 
+                Guidé par <span class="story-highlight">Anoak</span>, il traverse des épreuves sombres 
+                dans ses rêves, testant sa lucidité et sa détermination.
+            </p>
+            <p class="story-text">
+                Avec <span class="story-highlight">Iris</span> et <span class="story-highlight">Vénus</span>, 
+                il forme la <span class="story-highlight">Trinité du Maintien Cosmique</span> — 
+                trois forces fondamentales qui maintiennent l'équilibre de l'univers : 
+                la conscience, l'émotion et la logique.
+            </p>
+            <p class="story-text">
+                Des milliards d'années après la guerre interdimensionnelle, Aaron devenu gardien 
+                raconte son histoire. Comment trois âmes ordinaires ont découvert qu'elles étaient 
+                destinées à sauver l'existence elle-même.
+            </p>
+            <p class="story-text">
+                <em>"Le monde s’effondre, mais la Cité d’Anoak demeure. L’espoir a un nom et de ce nom il vaincra."</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text">Transmission depuis le Champ de Conscience Universel</p>
+        <p class="signal">[SIGNAL : ACTIF] /// [DIMENSION : 3] /// [RÉSONANCE : STABLE]</p>
+        <p class="footer-text" style="margin-top: 2rem;">© 2024 ANOAK - Chroniques d'un Univers Oublié</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Image agrandie" id="lightbox-img">
+    </div>
+</body>
+</html>
