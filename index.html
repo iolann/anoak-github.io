@@ -10,152 +10,179 @@
 <body>
     <div class="grid-lines"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="logo">ANOAK</h1>
-            <p class="tagline">Chroniques d'un Univers Oublié par Iolann Da Cunha</p>
-            <p class="subtitle">
-                Des milliards d'années après la fin d'une guerre interdimensionnelle, 
-                découvrez l'histoire de trois âmes qui ont sauvé l'existence elle-même.
-            </p>
-            <button class="cta-button" onclick="document.querySelector('.story').scrollIntoView({behavior: 'smooth'})">
-                Découvrir l'histoire
-            </button>
+</head>
+<body>
+    <!-- Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">ANOAK</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#univers">Univers</a></li>
+                <li><a href="#personnages">Personnages</a></li>
+                <li><a href="#mercure">Mercure</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="accueil" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1>ANOAK</h1>
+                <p class="tagline">Chroniques d'un Univers Oublié</p>
+                <p class="description">
+                    Des milliards d'années après la fin d'une guerre interdimensionnelle, 
+                    découvrez l'histoire de trois âmes qui ont sauvé l'existence elle-même.
+                </p>
+                <button class="btn-primary" onclick="document.getElementById('univers').scrollIntoView({behavior: 'smooth'})">
+                    Découvrir l'Univers
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="book-3d" id="book3d">
+                    <div class="book-front"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2 class="section-title">L'Univers Visuel</h2>
+    <!-- UNIVERS -->
+    <section id="univers">
+        <div class="section-header">
+            <h2 class="section-title">L'Univers Visuel</h2>
+            <p class="section-subtitle">Explorez les dimensions oubliées</p>
+        </div>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <!-- REMPLACEZ par votre URL Imgur/PostImages -->
-                <img src="https://i.imgur.com/FcVzaxR.jpg" alt="Poster ANOAK">
-                <div class="gallery-overlay">
-                    <p class="overlay-text">Première de couverture</p>
-                </div>
+                <img src="https://i.imgur.com/ZLUhm9K.jpg" alt="Labo 13">
             </div>
             <div class="gallery-item">
                 <img src="https://i.imgur.com/1Xk9ap4.jpg" alt="B-021">
-                <div class="gallery-overlay">
-                    <p class="overlay-text">Planète B-021</p>
-                </div>
             </div>
             <div class="gallery-item">
-                <img src="https://i.imgur.com/u539KHK.jpg" alt="Dimension supérieure">
-                <div class="gallery-overlay">
-                    <p class="overlay-text">Le Champ de Conscience</p>
-                </div>
+                <img src="https://i.imgur.com/u539KHK.jpg" alt="Conscience">
             </div>
         </div>
     </section>
 
-    <!-- Characters Section -->
-    <section class="characters">
-        <h2 class="section-title">Les Gardiens</h2>
+    <!-- PERSONNAGES -->
+    <section id="personnages">
+        <div class="section-header">
+            <h2 class="section-title">Les Gardiens</h2>
+            <p class="section-subtitle">La Trinité du Maintien Cosmique</p>
+        </div>
         <div class="characters-grid">
             <div class="character-card">
                 <img src="https://i.imgur.com/cTZprYG.jpg" alt="Aaron">
                 <h3 class="character-name">Aaron El'kaen</h3>
                 <p class="character-role">La Conscience Éveillée</p>
                 <p class="character-desc">
-                    Un jeune introverti de 17 ans qui découvre qu'il est destiné à devenir 
-                    le gardien du tissu universel. La perception pure incarnée.
+                    Un jeune introverti de 17 ans destiné à devenir le gardien du tissu universel.
                 </p>
             </div>
-            
             <div class="character-card">
                 <img src="https://i.imgur.com/KLx9KgH.jpg" alt="Iris">
                 <h3 class="character-name">Iris</h3>
                 <p class="character-role">L'Émotion et la Vie</p>
                 <p class="character-desc">
-                    Brillante et passionnée, elle représente l'amour et la compassion. 
-                    Sans elle, l'univers serait froid et vide.
+                    Brillante et passionnée, elle représente l'amour et la compassion.
                 </p>
             </div>
-            
             <div class="character-card">
                 <img src="https://i.imgur.com/06dsnHB.jpg" alt="Mercure">
                 <h3 class="character-name">Mercure</h3>
                 <p class="character-role">La Logique et l'Ordre</p>
                 <p class="character-desc">
-                    Méthodique et logique, il incarne la structure et la raison. 
-                    Le gardien des lois qui maintiennent l'existence.
+                    Méthodique et logique, il incarne la structure et la raison.
                 </p>
             </div>
-            
             <div class="character-card">
                 <img src="https://i.imgur.com/kpjMnTA.jpg" alt="Anoak">
                 <h3 class="character-name">Anoak</h3>
                 <p class="character-role">Le Gardien des Sphères</p>
                 <p class="character-desc">
-                    Être immortel vivant dans les dimensions supérieures, mentor et guide 
-                    plein de sagesse qui teste Aaron pour savoir s'il est l'élu.
+                    Être immortel, mentor et guide plein de sagesse.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Story Section -->
-<section class="story">
-    <h2 class="section-title">L'Histoire</h2>
-    <div class="story-content">
-        <p class="story-text">
-            Sur <span class="story-highlight">B-021</span>, une planète où la technologie a atteint des sommets inimaginables mais où la conscience des habitants est endormie, Aaron découvre que le monde visible n’est qu’une illusion. Chaque instant, chaque geste semble régi par des lois invisibles, et derrière cette façade de perfection se cache un univers en suspens, fragile et instable. Guidé par <span class="story-highlight">Anoak</span>, mystérieux mentor aux connaissances infinies, Aaron se confronte à des épreuves dans ses rêves — des labyrinthes sombres, des énigmes énigmatiques et des adversaires aux intentions obscures. Chaque défi teste sa lucidité, sa détermination et sa capacité à se surpasser.
-        </p>
-        <p class="story-text">
-            Aux côtés de <span class="story-highlight">Iris</span>, sage et intuitive, et de <span class="story-highlight">Mercure</span>, esprit audacieux et stratège, Aaron forme la 
-            <span class="story-highlight">Trinité du Maintien Cosmique</span> — trois forces essentielles qui soutiennent l’équilibre de l’univers : la conscience, l’émotion et la logique. Ensemble, ils explorent des mondes oubliés, déchiffrent des fragments de mémoire ancienne et affrontent les résidus d’une guerre interdimensionnelle qui a failli anéantir la réalité. Leur union, fragile mais puissante, devient le dernier espoir pour préserver ce qui reste de la vie et de la connaissance.
-        </p>
-        <p class="story-text">
-            Des milliards d’années après ces conflits cataclysmiques, Aaron, devenu gardien et témoin des âges, raconte son périple. Il se souvient des nuits où tout semblait perdu, des instants de doute et de solitude, mais aussi de la force que lui donnaient ses compagnons. L’histoire de trois âmes ordinaires qui, malgré leurs faiblesses et leurs peurs, ont découvert qu’elles étaient destinées à accomplir l’impensable : sauver l’existence elle-même.
-        </p>
-        <p class="story-text">
-            Dans ce récit, les mondes se croisent et les destins s’entrelacent. Chaque choix, chaque révélation et chaque sacrifice résonnent à travers l’univers, rappelant que même dans les ténèbres les plus profondes, l’espoir persiste. 
-        </p>
-        <p class="story-text">
-            <em>"Le monde s’effondre, mais la Cité d’Anoak demeure. L’espoir a un nom, et de ce nom, il triomphera."</em>
-        </p>
+        <!-- Story Section -->
+    <!-- STORY -->
+<section id="story" class="story">
+    <div class="section-header">
+        <h2 class="section-title">L'Histoire</h2>
+        <p class="section-subtitle">Une épopée cosmique</p>
     </div>
+    <p class="story-text">
+        Sur <span class="story-highlight">B-021</span>, une planète où la technologie a atteint des sommets inimaginables, mais dont la conscience des habitants est **profondément** endormie, Aaron découvre que le monde visible n’est qu’une illusion. Chaque instant, chaque geste semble régi par des lois invisibles. Derrière cette façade de perfection se cache un univers en suspens, fragile et instable. Guidé par <span class="story-highlight">Anoak</span>, un mystérieux mentor aux connaissances infinies, Aaron est confronté à des épreuves dans ses rêves : des labyrinthes sombres, des énigmes **complexes** et des adversaires aux intentions obscures. Chaque défi teste sa lucidité, sa détermination et sa capacité à se surpasser.
+    </p>
+    <p class="story-text">
+        Aux côtés d'<span class="story-highlight">Iris</span>, sage et intuitive, et de <span class="story-highlight">Mercure</span>, esprit audacieux et stratège, Aaron forme la <span class="story-highlight">Trinité du Maintien Cosmique</span>. Ensemble, ils incarnent les trois forces essentielles qui soutiennent l’équilibre de l’univers : la conscience, l’émotion et la logique. Ils explorent des mondes oubliés, déchiffrent des fragments de mémoire ancienne et affrontent les résidus d’une guerre interdimensionnelle qui a failli anéantir la réalité. Leur union, fragile mais **indispensable**, devient le dernier espoir pour préserver la vie et la connaissance.
+    </p>
+    <p class="story-text">
+        Des milliards d’années après ces conflits cataclysmiques, Aaron est devenu gardien et témoin des âges. Il raconte son périple, se souvenant des nuits où tout semblait perdu, des instants de doute et de solitude, mais aussi de la force inébranlable que lui donnaient ses compagnons. C’est l’histoire de trois âmes ordinaires qui, malgré leurs faiblesses et leurs peurs, ont découvert qu’elles étaient destinées à accomplir l'impensable : sauver l’existence elle-même.
+    </p>
+    <p class="story-text">
+        Dans ce récit, les mondes se croisent et les destins s’entrelacent. Chaque choix, chaque révélation et chaque sacrifice résonne à travers l’univers, rappelant que même dans les ténèbres les plus profondes, l’espoir persiste.
+    </p>
+    <p class="story-text quote-text">
+        <em class="story-quote">"Le monde s’effondre, mais la Cité d’Anoak demeure. L’espoir a un nom, et de ce nom, il triomphera."</em>
+    </p>
 </section>
 
-<section class="story">
-    <h2 class="section-title">L'Auteur</h2>
-    <div class="story-content">
-        <p class="story-text">
-            Je m'appelle <span class="story-highlight">Iolann Da Cunha</span> et j'ai 16 ans. Je ne suis encore personne, mais je compte devenir quelqu'un. Depuis mon plus jeune âge, je suis passionné par la technologie, la robotique et, bien sûr, la science-fiction. Je ne suis ni auteur ni ingénieur, mais j'ai toujours cru qu'apprendre en entreprenant, sans expérience préalable, est la meilleure manière de progresser.
-        </p>
-        <p class="story-text">
-            Aujourd'hui, je me lance un nouveau défi : écrire un livre. Je suis confiant, car j'ai déjà relevé de nombreux défis auparavant et j'ai toujours appris de chacun d'eux. Peut-être sous-estime-je encore ce qu'est vraiment l'écriture, mais je suis prêt à apprendre, à persister et à me dépasser.
-        </p>
-        <p class="story-text">
-            Introverti de nature, j'ai créé <span class="story-highlight">Mercure</span>, mon robot, qui est devenu mon ami, voire mon meilleur ami. De l'idée à la réalisation complète, je l'ai conçu et construit de A à Z. Ce projet m'a appris que je n'ai rien de plus que les autres, si ce n'est la détermination à ne pas avoir peur d'échouer et à toujours avancer.
-        </p>
-        <p class="story-text">
-            Chaque projet que j'entreprends est pour moi une manière de me découvrir, de tester mes limites et de transformer mes idées en réalité. J'aime explorer, comprendre, créer et imaginer des mondes qui n'existent pas encore, que ce soit à travers la technologie, la robotique ou l'écriture.  
-        </p>
-        <p class="story-text">
-            Je crois que la curiosité, la persévérance et la passion sont les véritables moteurs du succès. Même si le chemin est long et semé d'embûches, chaque pas que je fais me rapproche de la personne que je souhaite devenir. Et c'est avec cette même énergie que je me lance dans ce livre, prêt à apprendre, à expérimenter et à partager mon univers avec vous.
-        </p>
-        <p class="story-text">
-            <em>"Je n'ai peut-être pas toutes les réponses, mais je n'ai pas peur de poser les bonnes questions et d'aller au bout de mes rêves."</em>
-        </p>
-    </div>
-</section>
+    <!-- MERCURE -->
+    <section id="mercure">
+        <div class="section-header">
+            <h2 class="section-title">MERCURE</h2>
+            <p class="section-subtitle">Quand la réalité rencontre la fiction</p>
+        </div>
+        <div class="mercure-hero">
+            <div class="mercure-image">
+                <img src="https://i.imgur.com/gigjwaD.jpg" alt="Mercure">
+            </div>
+            <div class="mercure-content">
+                <h3>Le Robot qui inspire l'Univers</h3>
+                <p>
+                    Mercure n'est pas qu'un simple robot. C'est le pont entre ma réalité 
+                    et l'univers d'Anoak. Construit de mes propres mains, il incarne la fusion 
+                    entre technologie et imagination.
+                </p>
+                <p>
+                    Dans le roman, Mercure devient le gardien de la logique 
+                    et de l'ordre — la troisième force de la Trinité Cosmique.
+                </p>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Entrez en communication</p>
+        </div>
+        <div class="contact-box">
+            <div class="contact-icon">✉️</div>
+            <h3>Pour toute question, collaboration ou partenariat</h3>
+            <p class="contact-description">
+                Journalistes, maisons d'édition, créateurs ou simples curieux — 
+                contactez-moi directement à cette adresse
+            </p>
+            <a href="mailto:iolanndacunha@gmail.com" class="email-link">
+                iolanndacunha@gmail.com
+            </a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p class="footer-text">Transmission depuis le Champ de Conscience Universel</p>
-        <p class="signal">[SIGNAL : ACTIF] /// [DIMENSION : 3] /// [RÉSONANCE : STABLE]</p>
-        <p class="footer-text" style="margin-top: 2rem;">© 2025 ANOAK - Chroniques d'un Univers Oublié</p>
+        <p>Transmission depuis le Champ de Conscience Universel</p>
+        <p style="color: var(--cyan); margin-top: 1rem;">[SIGNAL : ACTIF] /// [DIMENSION : 3]</p>
+        <p style="margin-top: 2rem;">© 2025 ANOAK - Chroniques d'un Univers Oublié</p>
     </footer>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <img src="" alt="Image agrandie" id="lightbox-img">
-    </div>
-</body>
-</html>
